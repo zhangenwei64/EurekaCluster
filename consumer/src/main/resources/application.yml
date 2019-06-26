@@ -1,0 +1,13 @@
+server:
+  port: 8030
+spring:
+  application:
+    name: consumer
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:8010/eureka
+#user-server:
+#  ribbon:
+#    #负载均衡器：随机，默认使用轮询
+#    NFLoadBalanceRuleClassName: com.netflix.loadbalancer.RandomRule

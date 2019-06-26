@@ -1,0 +1,14 @@
+server:
+  port: 8011
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:8010/eureka
+  instance:
+    lease-expiration-duration-in-seconds: 10 # 10秒即过期
+    lease-renewal-interval-in-seconds: 5 # 5秒一次心跳
+#  server:
+#    enable-self-preservation: false #关闭自我保护机制
+spring:
+  application:
+    name: register-center
